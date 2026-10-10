@@ -6,11 +6,19 @@
 <meta name="theme-color" content="#ffecf3">
 <title>Một câu hỏi nhỏ dành cho anh 💗</title>
 <style>
-:root{--pink:#ef5b93;--ink:#8c3c60;--soft:#fff5f8}*{box-sizing:border-box}html{min-height:100%}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:32px 16px;font-family:'Trebuchet MS','Segoe UI',sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 15%,#fff8c9 0,transparent 28%),radial-gradient(circle at 85% 75%,#ffc3da 0,transparent 33%),linear-gradient(135deg,#ffeaf3,#f9ddec 55%,#fff5e8);overflow-x:hidden}.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden}.sparkles span{position:absolute;bottom:-50px;animation:floatUp linear infinite;opacity:.5;filter:drop-shadow(0 3px 3px #e987b44d)}.card{width:min(100%,540px);position:relative;text-align:center;padding:40px 22px 34px;background:#ffffffd9;box-shadow:0 20px 75px #b7488050,0 3px 0 #ffffffaa inset;border:2px solid #fff;border-radius:34px;z-index:2;backdrop-filter:blur(6px)}.tag{display:inline-block;padding:7px 15px;border-radius:50px;background:#ffe7f0;font-size:12px;font-weight:800;letter-spacing:1.5px;color:#d45b8a}.bear{font-size:70px;margin:12px 0 6px;animation:bob 2s ease-in-out infinite}.hearts{font-size:24px;letter-spacing:8px;margin-bottom:10px}h1{margin:10px 0 8px;font-size:clamp(27px,7vw,39px);line-height:1.25;color:#ae3268}p.sub{margin:0 0 22px;font-size:14px;color:#b16c88}.buttons{display:flex;min-height:95px;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}button{font-family:inherit;border:none;border-radius:100px;cursor:pointer;font-weight:900;transition:font-size .25s,padding .25s,opacity .25s,transform .25s;touch-action:manipulation}#yes{background:linear-gradient(120deg,#ff75a7,#ee4e8b);padding:15px 30px;color:white;font-size:19px;box-shadow:0 9px 22px #ee4e8b66}#yes:hover{transform:translateY(-3px)}#no{background:#f4e5ed;color:#a96f89;font-size:19px;padding:15px 26px}#no:hover{background:#efd7e4}.hint{min-height:18px;font-size:12px;color:#cb8aa5;margin-top:8px}.notes{display:grid;gap:10px;text-align:left;margin-top:10px}.note{background:#fff4cd;border:1px solid #f6e7a5;border-radius:12px 15px 15px 6px;padding:13px 15px;color:#8e6376;box-shadow:3px 5px 0 #f2dfad77;line-height:1.5;font-size:14px;animation:pop .35s both;transform-origin:top left}.note:nth-child(even){background:#fce0ec;border-color:#ffd1e2;box-shadow:3px 5px 0 #f3c8dc77}.note b{display:block;margin-bottom:2px;color:#c44e83;font-size:12px}.success{display:none}.success .bear{font-size:80px}.success h2{font-size:clamp(26px,6vw,36px);color:#e94989}.success p{line-height:1.7;font-size:18px}.again{margin-top:12px;background:#ffe0ec;color:#bb4778;padding:11px 22px}.signature{font-size:12px;margin-top:26px;color:#bf89a3;letter-spacing:.4px}@keyframes pop{from{opacity:0;transform:translateY(14px) rotate(-3deg)}to{opacity:1;transform:translateY(0) rotate(0)}}@keyframes bob{50%{transform:translateY(-8px) rotate(4deg)}}@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg)}}@media(max-width:390px){.card{padding:30px 15px}.buttons{gap:9px}#yes,#no{font-size:17px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+:root{--pink:#ef5b93;--ink:#8c3c60}*{box-sizing:border-box}html{min-height:100%}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:32px 16px;font-family:'Trebuchet MS','Segoe UI',sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 15%,#fff8c9 0,transparent 28%),radial-gradient(circle at 85% 75%,#ffc3da 0,transparent 33%),linear-gradient(135deg,#ffeaf3,#f9ddec 55%,#fff5e8);background-size:130% 130%;animation:backgroundDrift 12s ease-in-out infinite alternate;overflow-x:hidden}
+.sparkles,.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden}.sparkles span{position:absolute;bottom:-50px;animation:floatUp linear infinite;opacity:.5;filter:drop-shadow(0 3px 3px #e987b44d)}
+.card{width:min(100%,540px);position:relative;text-align:center;padding:40px 22px 34px;background:#ffffffd9;box-shadow:0 20px 75px #b7488050,0 3px 0 #ffffffaa inset;border:2px solid #fff;border-radius:34px;z-index:2;backdrop-filter:blur(6px);animation:cardEnter .85s cubic-bezier(.2,1.4,.35,1) both}.card::before{content:'♡';position:absolute;top:13px;right:20px;font-size:24px;color:#f2a1bd;animation:heartBeat 1.8s infinite}
+.tag{display:inline-block;padding:7px 15px;border-radius:50px;background:#ffe7f0;font-size:12px;font-weight:800;letter-spacing:1.5px;color:#d45b8a}.bear{font-size:70px;margin:12px 0 6px;animation:bob 2s ease-in-out infinite}.hearts{font-size:24px;letter-spacing:8px;margin-bottom:10px;animation:heartBeat 1.8s ease-in-out infinite}h1{margin:10px 0 8px;font-size:clamp(27px,7vw,39px);line-height:1.25;color:#ae3268}p.sub{margin:0 0 22px;font-size:14px;color:#b16c88}
+.buttons{display:flex;min-height:95px;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}button{font-family:inherit;border:none;border-radius:100px;cursor:pointer;font-weight:900;transition:font-size .35s,padding .35s,opacity .35s,transform .25s,box-shadow .25s;touch-action:manipulation}button:focus-visible{outline:3px solid #af376c;outline-offset:4px}#yes{background:linear-gradient(120deg,#ff75a7,#ee4e8b);padding:15px 30px;color:white;font-size:19px;box-shadow:0 9px 22px #ee4e8b66;animation:yesPulse 2.5s ease-in-out infinite}#yes:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 14px 28px #ee4e8b77}#yes:active{transform:scale(.95)}#no{background:#f4e5ed;color:#a96f89;font-size:19px;padding:15px 26px}#no:hover{background:#efd7e4;transform:rotate(-3deg)}#no:active{transform:scale(.9)}.hint{min-height:18px;font-size:12px;color:#cb8aa5;margin-top:8px}.notes{display:grid;gap:10px;text-align:left;margin-top:10px;min-height:0}.note{background:#fff4cd;border:1px solid #f6e7a5;border-radius:12px 15px 15px 6px;padding:13px 15px;color:#8e6376;box-shadow:3px 5px 0 #f2dfad77;line-height:1.5;font-size:14px;animation:noteEnter .4s cubic-bezier(.2,1.3,.3,1) both;transform-origin:top left}.note:nth-child(even){background:#fce0ec;border-color:#ffd1e2;box-shadow:3px 5px 0 #f3c8dc77}.note b{display:block;margin-bottom:2px;color:#c44e83;font-size:12px}.note.exit{animation:noteExit .2s ease-in both}.success{display:none}.success.show{display:block;animation:successEnter .6s cubic-bezier(.2,1.4,.3,1) both}.success .bear{font-size:80px}.success h2{font-size:clamp(26px,6vw,36px);color:#e94989}.success p{line-height:1.7;font-size:18px}.again{margin-top:12px;background:#ffe0ec;color:#bb4778;padding:11px 22px}.again:hover{transform:scale(1.07)}.signature{font-size:12px;margin-top:26px;color:#bf89a3;letter-spacing:.4px}
+.confetti i{position:absolute;font-style:normal;animation:confettiFall linear forwards;top:-50px}
+@keyframes backgroundDrift{to{background-position:100% 100%}}@keyframes cardEnter{from{opacity:0;transform:translateY(40px) scale(.93)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes bob{50%{transform:translateY(-8px) rotate(4deg)}}@keyframes heartBeat{0%,100%{transform:scale(1)}35%{transform:scale(1.12)}65%{transform:scale(.97)}}@keyframes yesPulse{0%,100%{box-shadow:0 9px 22px #ee4e8b66}50%{box-shadow:0 9px 28px #ee4e8baa,0 0 0 9px #ff89b320}}@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg)}}@keyframes noteEnter{from{opacity:0;transform:translateY(15px) rotate(-5deg) scale(.92)}to{opacity:1;transform:translateY(0) rotate(0) scale(1)}}@keyframes noteExit{to{opacity:0;transform:translateX(22px) rotate(5deg) scale(.9)}}@keyframes successEnter{from{opacity:0;transform:scale(.8) rotate(-4deg)}to{opacity:1;transform:scale(1) rotate(0)}}@keyframes confettiFall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-9deg)}75%{transform:rotate(9deg)}}.wiggle{animation:wiggle .3s ease-in-out}
+@media(max-width:390px){.card{padding:30px 15px}.buttons{gap:9px}#yes,#no{font-size:17px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <div class="sparkles" aria-hidden="true" id="sparkles"></div>
+<div class="confetti" aria-hidden="true" id="confetti"></div>
 <main class="card">
   <div id="question">
     <span class="tag">TO MY FAVORITE PERSON ♡</span>
@@ -36,28 +44,58 @@
 </main>
 <script>
 const notes=[
-  ['ơ 🤨','Anh không yêu em à'],
-  ['Khoan đã ✋','Anh chắc chưa?],
+  ['Ơ 🤨','Anh không yêu em à?'],
+  ['Khoan đã ✋','Anh chắc chưa?'],
   ['Hmm... 👀','Sao anh vẫn chọn nút này vậy?'],
   ['Ủa alo? 🤨','Anh quyết tâm chọn KHÔNG tới vậy luôn hả?'],
   ['Em hỏi lần cuối nha 😌','Anh có muốn suy nghĩ lại không?'],
   ['Hết lựa chọn 😎','Rồi, giờ anh biết phải bấm gì rồi ha.']
 ];
-const no=document.getElementById('no'),yes=document.getElementById('yes'),notesBox=document.getElementById('notes'),hint=document.getElementById('hint');let count=0;
+const no=document.getElementById('no'),yes=document.getElementById('yes'),notesBox=document.getElementById('notes'),hint=document.getElementById('hint');
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let count=0;
 no.addEventListener('click',()=>{
-  if(count>=6)return;count++;
+  if(count>=6)return;
+  count++;
   const note=document.createElement('div');note.className='note';
   const heading=document.createElement('b');heading.textContent=notes[count-1][0];
   const body=document.createElement('span');body.textContent=notes[count-1][1];
-  note.append(heading,body);notesBox.replaceChildren(note);
+  note.append(heading,body);
+  // Chỉ giữ lại note mới nhất.
+  notesBox.replaceChildren(note);
   const ratio=1-count/6;
   if(count===6){no.style.display='none';hint.textContent='Nút KHÔNG đã nghỉ hưu. 👋';}
-  else{no.style.fontSize=Math.max(10,19*ratio)+'px';no.style.padding=`${Math.max(5,15*ratio)}px ${Math.max(8,26*ratio)}px`;no.style.opacity=String(Math.max(.35,ratio));hint.textContent=`Lượt chọn KHÔNG: ${count}/6`;}
-  yes.style.fontSize=19+count*3+'px';yes.style.padding=`${15+count*2}px ${30+count*3}px`;
+  else{
+    no.style.fontSize=Math.max(10,19*ratio)+'px';
+    no.style.padding=`${Math.max(5,15*ratio)}px ${Math.max(8,26*ratio)}px`;
+    no.style.opacity=String(Math.max(.35,ratio));
+    hint.textContent=`Lượt chọn KHÔNG: ${count}/6`;
+    if(!reduced){no.classList.remove('wiggle');void no.offsetWidth;no.classList.add('wiggle');}
+  }
+  yes.style.fontSize=19+count*3+'px';
+  yes.style.padding=`${15+count*2}px ${30+count*3}px`;
 });
-yes.addEventListener('click',()=>{document.getElementById('question').style.display='none';document.getElementById('success').style.display='block';});
+yes.addEventListener('click',()=>{
+  document.getElementById('question').style.display='none';
+  document.getElementById('success').classList.add('show');
+  if(!reduced){
+    const confetti=document.getElementById('confetti');confetti.replaceChildren();
+    for(let i=0;i<48;i++){
+      const el=document.createElement('i');el.textContent=['💗','💕','✨','🌷','💖'][i%5];
+      el.style.left=Math.random()*100+'%';el.style.fontSize=14+Math.random()*18+'px';
+      el.style.animationDuration=2.6+Math.random()*2.2+'s';el.style.animationDelay=Math.random()*.8+'s';
+      confetti.append(el);
+    }
+    setTimeout(()=>confetti.replaceChildren(),6000);
+  }
+});
 document.getElementById('again').addEventListener('click',()=>location.reload());
-const sparkles=document.getElementById('sparkles');for(let i=0;i<20;i++){const el=document.createElement('span');el.textContent=['💗','🌸','💕','✨','🎀'][i%5];el.style.left=(Math.random()*100)+'%';el.style.fontSize=(12+Math.random()*18)+'px';el.style.animationDuration=(9+Math.random()*9)+'s';el.style.animationDelay=(-Math.random()*18)+'s';sparkles.append(el)}
+const sparkles=document.getElementById('sparkles');
+if(!reduced)for(let i=0;i<20;i++){
+  const el=document.createElement('span');el.textContent=['💗','🌸','💕','✨','🎀'][i%5];
+  el.style.left=Math.random()*100+'%';el.style.fontSize=12+Math.random()*18+'px';
+  el.style.animationDuration=9+Math.random()*9+'s';el.style.animationDelay=-Math.random()*18+'s';sparkles.append(el);
+}
 </script>
 </body>
 </html>
